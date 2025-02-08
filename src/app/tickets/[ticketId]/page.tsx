@@ -1,12 +1,12 @@
 import React from "react";
 import inititalTickets from "@/data";
 
-type ticketIdProp = {
+type ticketPageProps = {
     params: {
         ticketId: string;
     };
 };
-const TicketPage = ({ params }: ticketIdProp) => {
+const TicketPage = ({ params }: ticketPageProps) => {
     const ticketInfo = inititalTickets.find(
         (ticket) => ticket.id === params.ticketId
     );
